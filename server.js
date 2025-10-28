@@ -1,11 +1,16 @@
 require('dotenv').config();
 const express=require("express")
 const app =express()
-const connectToDb=require('../auth/database/db')
-const authRoutes=require('../auth/routes/route')
-const homeRoutes=require('../auth/routes/home-routes')
-const adminRoutes=require('../auth/routes/admin-routes')
-const imgRoutes=require('../auth/routes/imageRoutes')
+const connectToDb=require('./auth/database/db')
+const authRoutes=require('./auth/routes/route')
+const homeRoutes=require('./auth/routes/home-routes')
+const adminRoutes=require('./auth/routes/admin-routes')
+const imgRoutes=require('./auth/routes/imageRoutes')
+// const connectToDb=require('../auth/database/db')
+// const authRoutes=require('../auth/routes/route')
+// const homeRoutes=require('../auth/routes/home-routes')
+// const adminRoutes=require('../auth/routes/admin-routes')
+// const imgRoutes=require('../auth/routes/imageRoutes')
 
 connectToDb()
 
