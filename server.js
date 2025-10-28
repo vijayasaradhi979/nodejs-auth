@@ -1,5 +1,5 @@
-const express=require("express")
 require('dotenv').config();
+const express=require("express")
 const app =express()
 const connectToDb=require('../auth/database/db')
 const authRoutes=require('../auth/routes/route')
